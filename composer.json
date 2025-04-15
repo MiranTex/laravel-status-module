@@ -1,0 +1,29 @@
+{
+    "name": "dev/laravel-status-module",
+    "description": "A package to deal with models status without creating a single table for status for each model",
+    "autoload": {
+        "psr-4": {
+            "Dev\\LaravelStatusModule\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mirantex",
+            "email": "arielmirantex@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "illuminate/database": "^8.0|^9.0|^10.0"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Dev\\StatusModule\\"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}
